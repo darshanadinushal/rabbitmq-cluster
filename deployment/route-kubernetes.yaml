@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: rabbits-route-kubernetes 
+  namespace: rabbits
+spec:
+  path: /
+  to:
+    kind: Service
+    name: rabbitmq
+  port:
+    targetPort: discovery
+    wildcardPolicy: None
