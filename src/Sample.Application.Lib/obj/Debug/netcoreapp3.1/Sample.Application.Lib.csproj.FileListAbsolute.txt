@@ -1,0 +1,9 @@
+D:\Project\ServiceBus\src\Sample.Application.Lib\bin\Debug\netcoreapp3.1\Sample.Application.Lib.deps.json
+D:\Project\ServiceBus\src\Sample.Application.Lib\bin\Debug\netcoreapp3.1\Sample.Application.Lib.dll
+D:\Project\ServiceBus\src\Sample.Application.Lib\bin\Debug\netcoreapp3.1\Sample.Application.Lib.pdb
+D:\Project\ServiceBus\src\Sample.Application.Lib\obj\Debug\netcoreapp3.1\Sample.Application.Lib.csprojAssemblyReference.cache
+D:\Project\ServiceBus\src\Sample.Application.Lib\obj\Debug\netcoreapp3.1\Sample.Application.Lib.AssemblyInfoInputs.cache
+D:\Project\ServiceBus\src\Sample.Application.Lib\obj\Debug\netcoreapp3.1\Sample.Application.Lib.AssemblyInfo.cs
+D:\Project\ServiceBus\src\Sample.Application.Lib\obj\Debug\netcoreapp3.1\Sample.Application.Lib.csproj.CoreCompileInputs.cache
+D:\Project\ServiceBus\src\Sample.Application.Lib\obj\Debug\netcoreapp3.1\Sample.Application.Lib.dll
+D:\Project\ServiceBus\src\Sample.Application.Lib\obj\Debug\netcoreapp3.1\Sample.Application.Lib.pdb
