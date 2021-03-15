@@ -32,7 +32,7 @@ namespace Sample.Application.Publisher
 
                 config.UsingRabbitMq((ctx, cfg) =>
                 {
-                    //cfg.Host("amqp://darshana:darshana123$@LAPTOP-B4GI3VF3:5672/");
+                    //cfg.Host("amqp://<username>:<password>@<hostname>:<port>/");
                     cfg.Host(queueSettings.HostName, queueSettings.Port, queueSettings.VirtualHost,
                      h => {
                          h.Username(queueSettings.UserName);
