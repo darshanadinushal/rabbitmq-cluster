@@ -3,3 +3,5 @@
 ################################################################################
 
 /microservices
+/.vs/Sample.ServiceBus
+/src/Sample.Application.Lib
