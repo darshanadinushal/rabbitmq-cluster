@@ -15,6 +15,6 @@ namespace Sample.Application.Lib.Model.Domain
 
         public string Subject { get; set; }
 
-        public string From { get; set; }
+        public string AppointmentNumber { get; set; }
     }
 }

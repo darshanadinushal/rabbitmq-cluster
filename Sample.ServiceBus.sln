@@ -5,13 +5,29 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "REST Endpoints", "REST Endpoints", "{6FFEEAC0-B870-4831-B13F-89DD4A95CF33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Application.Consumer", "microservices\Sample.Application.Consumer\Sample.Application.Consumer.csproj", "{CF59D375-9A5D-4ED2-9BA3-21162EFDFF8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Application.Consumer", "microservices\Sample.Application.Consumer\Sample.Application.Consumer.csproj", "{CF59D375-9A5D-4ED2-9BA3-21162EFDFF8E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{144B3D2D-A417-43B5-86F4-508AAE9E7C03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Application.Lib", "src\Sample.Application.Lib\Sample.Application.Lib.csproj", "{75F38EFD-5CAB-4026-9CF3-BBE1C09E1D35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Application.Lib", "src\Sample.Application.Lib\Sample.Application.Lib.csproj", "{75F38EFD-5CAB-4026-9CF3-BBE1C09E1D35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Application.Publisher", "microservices\Sample.Application.Publisher\Sample.Application.Publisher.csproj", "{ECA15CF9-531C-4703-9CB7-AD826ADE2A79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Application.Publisher", "microservices\Sample.Application.Publisher\Sample.Application.Publisher.csproj", "{ECA15CF9-531C-4703-9CB7-AD826ADE2A79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{A1F8DBE7-9CA1-4798-8906-1070DBDDF05C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publisher-consumer", "publisher-consumer", "{62DF69C0-4747-440A-B0F7-01A314694488}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\publisher-consumer\consumer-deployment.yaml = deployment\publisher-consumer\consumer-deployment.yaml
+		deployment\publisher-consumer\publisher-deployment.yaml = deployment\publisher-consumer\publisher-deployment.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-cluster", "rabbitmq-cluster", "{6F31FC62-DC15-4CB5-8817-E126BDA16820}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\rabbitmq-cluster\rabbit-configmap.yaml = deployment\rabbitmq-cluster\rabbit-configmap.yaml
+		deployment\rabbitmq-cluster\rabbit-rbac.yaml = deployment\rabbitmq-cluster\rabbit-rbac.yaml
+		deployment\rabbitmq-cluster\rabbit-secret.yaml = deployment\rabbitmq-cluster\rabbit-secret.yaml
+		deployment\rabbitmq-cluster\rabbit-statefulset.yaml = deployment\rabbitmq-cluster\rabbit-statefulset.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +55,8 @@ Global
 		{CF59D375-9A5D-4ED2-9BA3-21162EFDFF8E} = {6FFEEAC0-B870-4831-B13F-89DD4A95CF33}
 		{75F38EFD-5CAB-4026-9CF3-BBE1C09E1D35} = {144B3D2D-A417-43B5-86F4-508AAE9E7C03}
 		{ECA15CF9-531C-4703-9CB7-AD826ADE2A79} = {6FFEEAC0-B870-4831-B13F-89DD4A95CF33}
+		{62DF69C0-4747-440A-B0F7-01A314694488} = {A1F8DBE7-9CA1-4798-8906-1070DBDDF05C}
+		{6F31FC62-DC15-4CB5-8817-E126BDA16820} = {A1F8DBE7-9CA1-4798-8906-1070DBDDF05C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC9D1A45-C35D-452C-810B-8C5F2EC09343}
