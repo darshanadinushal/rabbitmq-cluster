@@ -29,6 +29,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-cluster", "rabbitm
 		deployment\rabbitmq-cluster\rabbit-statefulset.yaml = deployment\rabbitmq-cluster\rabbit-statefulset.yaml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "elk-cluster", "elk-cluster", "{E9C92369-D41B-4F90-9287-E5BA14E75B27}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\elk-cluster\elasticsearch-route.yaml = deployment\elk-cluster\elasticsearch-route.yaml
+		deployment\elk-cluster\elasticsearch.yaml = deployment\elk-cluster\elasticsearch.yaml
+		deployment\elk-cluster\filebeat-logstash.yaml = deployment\elk-cluster\filebeat-logstash.yaml
+		deployment\elk-cluster\kibana.yaml = deployment\elk-cluster\kibana.yaml
+		deployment\elk-cluster\kube-state-metrics.yaml = deployment\elk-cluster\kube-state-metrics.yaml
+		deployment\elk-cluster\logstash.yaml = deployment\elk-cluster\logstash.yaml
+		deployment\elk-cluster\metricbeat-logstash-deployment.yaml = deployment\elk-cluster\metricbeat-logstash-deployment.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +68,7 @@ Global
 		{ECA15CF9-531C-4703-9CB7-AD826ADE2A79} = {6FFEEAC0-B870-4831-B13F-89DD4A95CF33}
 		{62DF69C0-4747-440A-B0F7-01A314694488} = {A1F8DBE7-9CA1-4798-8906-1070DBDDF05C}
 		{6F31FC62-DC15-4CB5-8817-E126BDA16820} = {A1F8DBE7-9CA1-4798-8906-1070DBDDF05C}
+		{E9C92369-D41B-4F90-9287-E5BA14E75B27} = {A1F8DBE7-9CA1-4798-8906-1070DBDDF05C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC9D1A45-C35D-452C-810B-8C5F2EC09343}
